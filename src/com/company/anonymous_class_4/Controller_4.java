@@ -2,13 +2,10 @@ package com.company.anonymous_class_4;
 
 import com.company.Controllers;
 
-import java.io.IOException;
-
 public class Controller_4 implements Controllers
 {
-
     @Override
-    public void execute() throws IOException {
+    public void execute() {
         SomeClass someClass = new SomeClass(){
             @Override
             void firstMethod(){
@@ -36,6 +33,7 @@ public class Controller_4 implements Controllers
             }
         });
 
+        massage("E:\\SelfDevelopment\\Java\\Practise_Lessons\\src\\com\\company\\anonymous_class_4\\Massage.txt");
     }
 
     void methodInController(SomeClass someClass){

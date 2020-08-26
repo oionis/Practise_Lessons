@@ -1,14 +1,13 @@
 package com.company;
 
-import com.company.anonymous_class_4.Controller_4;
-import com.company.generics_2.Controller_2;
+import com.company.cloning_5.Controller_5;
 
 import java.io.IOException;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        Controllers controllers = new Controller_4();
+        Controllers controllers = new Controller_5();
         controllers.execute();
     }
 }

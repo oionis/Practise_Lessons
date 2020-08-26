@@ -20,6 +20,8 @@ public class Controller_3 implements Controllers {
         Inner inner = new Inner();
         inner.print();
         System.out.println("t = " + inner.t);
+
+        massage("E:\\SelfDevelopment\\Java\\Practise_Lessons\\src\\com\\company\\inner_class_3\\Massage.txt");
     }
 
     public void method (){
