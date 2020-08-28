@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public interface Controllers {
-    void execute() throws IOException;
+    void execute();
     default void massage(String fileName) {
         System.out.println("--------------------------------------------------------------");
         try {

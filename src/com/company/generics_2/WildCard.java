@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class WildCard implements Controllers {
     @Override
-    public void execute() throws IOException {
+    public void execute() {
         NewCell<? extends Car> newCell = new NewCell<>();
         Car car = newCell.getT();
 //        cell.setT(new Toyota());  // ---- can not

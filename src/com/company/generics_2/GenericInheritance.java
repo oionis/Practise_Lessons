@@ -2,12 +2,10 @@ package com.company.generics_2;
 
 import com.company.Controllers;
 
-import java.io.IOException;
-
 public class GenericInheritance implements Controllers {
 
     @Override
-    public void execute() throws IOException {
+    public void execute() {
         //        Parent parent = new GenParent();
         GenParent genParent = new Child();
         GenParent<String> genParent1 = new Child4<String>();

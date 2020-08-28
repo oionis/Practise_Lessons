@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 public class Bounds implements Controllers {
     @Override
-    public void execute() throws IOException {
+    public void execute() {
         SomeClass<Job> someClass = new SomeClass<>();
         someClass.doJod();
 

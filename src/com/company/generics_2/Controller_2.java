@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class Controller_2 implements Controllers {
     @Override
-    public void execute() throws IOException {
+    public void execute() {
 //        Controllers controllers = new GenericInheritance();
 //        Controllers controllers = new GenericMethods();
 //        Controllers controllers = new Bounds();

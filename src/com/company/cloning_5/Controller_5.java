@@ -8,21 +8,24 @@ public class Controller_5 implements Controllers {
 
         SomeClass someClass1 = new SomeClass();
         someClass1.setI(1);
-        System.out.println(someClass1.getI());
+        someClass1.secondClass = new SecondClass(5);
+        System.out.println("I = " + someClass1.getI() + "   SecondClass.J = " + someClass1.secondClass.j);
         SomeClass someClass2 = someClass1;
         someClass2.setI(2);
-        System.out.println(someClass1.getI());
+        someClass2.secondClass = new SecondClass(6);
+        System.out.println("I = " + someClass1.getI() + "   SecondClass.J = " + someClass1.secondClass.j);
         SomeClass someClass3 = someClass1.clone();
         someClass3.setI(3);
-        System.out.println(someClass1.getI());
+        someClass3.secondClass = new SecondClass(7);
+        System.out.println("I = " + someClass1.getI() + "   SecondClass.J = " + someClass1.secondClass.j);
 
-        massage("E:\\SelfDevelopment\\Java\\Practise_Lessons\\src\\com\\company\\cloning\\Massage.txt");
+        massage("E:\\SelfDevelopment\\Java\\Practise_Lessons\\src\\com\\company\\cloning_5\\Massage.txt");
 
     }
 }
 
 class SomeClass implements Cloneable{
-    private int i;
+    int i;
     SecondClass secondClass;
 
     public int getI() {
@@ -39,7 +42,7 @@ class SomeClass implements Cloneable{
             SomeClass someClass = (SomeClass) super.clone();
             someClass.secondClass = secondClass.clone();
             return someClass;
-        } catch (CloneNotSupportedException ex) {
+        } catch (CloneNotSupportedException | NullPointerException ex) {
             System.out.println(ex.getMessage());
         }
         return null;
@@ -48,6 +51,13 @@ class SomeClass implements Cloneable{
 
 class SecondClass implements Cloneable{
     int j;
+
+    public SecondClass(int j) {
+        this.j = j;
+    }
+
+    public SecondClass() {
+    }
 
     @Override
     protected SecondClass clone() throws CloneNotSupportedException {

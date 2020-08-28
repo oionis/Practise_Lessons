@@ -7,7 +7,7 @@ import java.io.IOException;
 public class GenericMethods implements Controllers {
 
     @Override
-    public void execute() throws IOException {
+    public void execute() {
         Cell<String> cell = new Cell<>();
         System.out.println(cell.method(5));
         cell.<Integer>method2(545);
