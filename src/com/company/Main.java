@@ -8,11 +8,12 @@ import com.company.inner_class_3.Controller_3;
 import com.company.sorting_in_collections_1.Controller_1;
 import com.company.threads_6.Controller_6;
 import com.company.threads_synhronized_7.Controller_7;
+import com.company.threads_volatile_atomic_8.Controller_8;
 
 public class Main {
 
     public static void main(String[] args) {
-        Controllers controllers = new Controller_7();
+        Controllers controllers = new Controller_8();
         controllers.execute();
 
     }
